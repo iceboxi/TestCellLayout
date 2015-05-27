@@ -14,6 +14,8 @@
 		144C54981B15BF89006EF996 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 144C54971B15BF89006EF996 /* Images.xcassets */; };
 		144C549B1B15BF89006EF996 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144C54991B15BF89006EF996 /* LaunchScreen.xib */; };
 		144C54A71B15BF89006EF996 /* TestCellLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 144C54A61B15BF89006EF996 /* TestCellLayoutTests.m */; };
+		144C54B31B15C211006EF996 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 144C54B11B15C211006EF996 /* MyTableViewCell.m */; };
+		144C54B41B15C211006EF996 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144C54B21B15C211006EF996 /* MyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		144C54A01B15BF89006EF996 /* TestCellLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCellLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		144C54A51B15BF89006EF996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		144C54A61B15BF89006EF996 /* TestCellLayoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCellLayoutTests.m; sourceTree = "<group>"; };
+		144C54B01B15C211006EF996 /* MyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
+		144C54B11B15C211006EF996 /* MyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
+		144C54B21B15C211006EF996 /* MyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +91,9 @@
 				144C54911B15BF89006EF996 /* ViewController.h */,
 				144C54921B15BF89006EF996 /* ViewController.m */,
 				144C54941B15BF89006EF996 /* Main.storyboard */,
+				144C54B01B15C211006EF996 /* MyTableViewCell.h */,
+				144C54B11B15C211006EF996 /* MyTableViewCell.m */,
+				144C54B21B15C211006EF996 /* MyTableViewCell.xib */,
 				144C54971B15BF89006EF996 /* Images.xcassets */,
 				144C54991B15BF89006EF996 /* LaunchScreen.xib */,
 				144C548A1B15BF89006EF996 /* Supporting Files */,
@@ -200,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				144C54961B15BF89006EF996 /* Main.storyboard in Resources */,
+				144C54B41B15C211006EF996 /* MyTableViewCell.xib in Resources */,
 				144C549B1B15BF89006EF996 /* LaunchScreen.xib in Resources */,
 				144C54981B15BF89006EF996 /* Images.xcassets in Resources */,
 			);
@@ -220,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				144C54931B15BF89006EF996 /* ViewController.m in Sources */,
+				144C54B31B15C211006EF996 /* MyTableViewCell.m in Sources */,
 				144C54901B15BF89006EF996 /* AppDelegate.m in Sources */,
 				144C548D1B15BF89006EF996 /* main.m in Sources */,
 			);
