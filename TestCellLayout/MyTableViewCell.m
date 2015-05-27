@@ -17,10 +17,13 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    CGRect frame = self.textLabel.frame;
-    CGSize size = [self.textLabel.text sizeWithFont:self.textLabel.font constrainedToSize:CGSizeMake(frame.size.width, frame.size.height) lineBreakMode:NSLineBreakByTruncatingTail];
+    self.titleLabel.translatesAutoresizingMaskIntoConstraints = YES;
+    self.number.translatesAutoresizingMaskIntoConstraints = YES;
     
-    self.textLabel.frame = CGRectMake(frame.origin.x, frame.origin.y, size.width, size.height);
+    CGRect frame = self.titleLabel.frame;
+    CGSize size = [self.titleLabel.text sizeWithFont:self.titleLabel.font constrainedToSize:CGSizeMake(200, frame.size.height) lineBreakMode:NSLineBreakByTruncatingTail];
+    
+    self.titleLabel.frame = CGRectMake(frame.origin.x, frame.origin.y, size.width, size.height);
     
     CGRect frame2 = self.number.frame;
     self.number.frame = CGRectMake(frame.origin.x+size.width, frame2.origin.y, frame2.size.width, frame2.size.height);

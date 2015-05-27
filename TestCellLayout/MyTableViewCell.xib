@@ -40,7 +40,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="number" destination="k7x-He-vWO" id="VfB-Yc-Jq0"/>
-                <outlet property="textLabel" destination="CuX-BE-3lo" id="xhB-Sn-uQi"/>
+                <outlet property="titleLabel" destination="CuX-BE-3lo" id="5u5-yt-bmK"/>
             </connections>
         </tableViewCell>
     </objects>
