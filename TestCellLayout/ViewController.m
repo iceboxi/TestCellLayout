@@ -33,7 +33,7 @@
     }
     [cell setSelectionStyle:UITableViewCellSelectionStyleGray];
     
-    [cell.textLabel setText:[string substringWithRange:NSMakeRange(0, indexPath.row)]];
+    [cell.myLabel setText:[string substringWithRange:NSMakeRange(0, indexPath.row)]];
     
     return cell;
 }

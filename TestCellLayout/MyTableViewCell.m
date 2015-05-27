@@ -17,10 +17,10 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    CGRect frame = self.textLabel.frame;
-    CGSize size = [self.textLabel.text sizeWithFont:self.textLabel.font constrainedToSize:CGSizeMake(frame.size.width, frame.size.height) lineBreakMode:NSLineBreakByTruncatingTail];
+    CGRect frame = self.myLabel.frame;
+    CGSize size = [self.myLabel.text sizeWithFont:self.myLabel.font constrainedToSize:CGSizeMake(frame.size.width, frame.size.height) lineBreakMode:NSLineBreakByTruncatingTail];
     
-    self.textLabel.frame = CGRectMake(frame.origin.x, frame.origin.y, size.width, size.height);
+    self.myLabel.frame = CGRectMake(frame.origin.x, frame.origin.y, size.width, size.height);
     
     CGRect frame2 = self.number.frame;
     self.number.frame = CGRectMake(frame.origin.x+size.width, frame2.origin.y, frame2.size.width, frame2.size.height);
