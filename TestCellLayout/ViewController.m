@@ -31,9 +31,11 @@
         [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil] forCellReuseIdentifier:CellIdentifier];
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     }
-    [cell setSelectionStyle:UITableViewCellSelectionStyleGray];
+    [cell.myLabel setText:[string substringWithRange:NSMakeRange(0, indexPath.row)]];
     
-    [cell.titleLabel setText:[string substringWithRange:NSMakeRange(0, indexPath.row)]];
+    CGSize size = [cell.myLabel.text sizeWithFont:cell.myLabel.font constrainedToSize:CGSizeMake(250, cell.myLabel.frame.size.height) lineBreakMode:NSLineBreakByTruncatingTail];
+    cell.myLabelWidth.constant = size.width;
+    
     
     return cell;
 }
