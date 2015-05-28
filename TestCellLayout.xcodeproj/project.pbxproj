@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141DBB9B1B16E6CE0076F01B /* NSString+Bounds.m in Sources */ = {isa = PBXBuildFile; fileRef = 141DBB9A1B16E6CE0076F01B /* NSString+Bounds.m */; };
 		144C548D1B15BF89006EF996 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 144C548C1B15BF89006EF996 /* main.m */; };
 		144C54901B15BF89006EF996 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 144C548F1B15BF89006EF996 /* AppDelegate.m */; };
 		144C54931B15BF89006EF996 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144C54921B15BF89006EF996 /* ViewController.m */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		141DBB991B16E6CE0076F01B /* NSString+Bounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Bounds.h"; sourceTree = "<group>"; };
+		141DBB9A1B16E6CE0076F01B /* NSString+Bounds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Bounds.m"; sourceTree = "<group>"; };
 		144C54871B15BF89006EF996 /* TestCellLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCellLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		144C548B1B15BF89006EF996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		144C548C1B15BF89006EF996 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,6 +97,8 @@
 				144C54B01B15C211006EF996 /* MyTableViewCell.h */,
 				144C54B11B15C211006EF996 /* MyTableViewCell.m */,
 				144C54B21B15C211006EF996 /* MyTableViewCell.xib */,
+				141DBB991B16E6CE0076F01B /* NSString+Bounds.h */,
+				141DBB9A1B16E6CE0076F01B /* NSString+Bounds.m */,
 				144C54971B15BF89006EF996 /* Images.xcassets */,
 				144C54991B15BF89006EF996 /* LaunchScreen.xib */,
 				144C548A1B15BF89006EF996 /* Supporting Files */,
@@ -229,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				144C54931B15BF89006EF996 /* ViewController.m in Sources */,
+				141DBB9B1B16E6CE0076F01B /* NSString+Bounds.m in Sources */,
 				144C54B31B15C211006EF996 /* MyTableViewCell.m in Sources */,
 				144C54901B15BF89006EF996 /* AppDelegate.m in Sources */,
 				144C548D1B15BF89006EF996 /* main.m in Sources */,
@@ -428,6 +434,7 @@
 				144C54AC1B15BF89006EF996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		144C54AD1B15BF89006EF996 /* Build configuration list for PBXNativeTarget "TestCellLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +443,7 @@
 				144C54AF1B15BF89006EF996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
