@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MyTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *myLabel;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *number;
-@property (strong, nonatomic) IBOutlet NSLayoutConstraint *myLabelWidth;
+@property (weak, nonatomic) IBOutlet UILabel *third;
 
 @end

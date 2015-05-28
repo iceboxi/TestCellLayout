@@ -31,11 +31,14 @@
         [tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil] forCellReuseIdentifier:CellIdentifier];
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     }
-    [cell.myLabel setText:[string substringWithRange:NSMakeRange(0, indexPath.row)]];
+    [cell setSelectionStyle:UITableViewCellSelectionStyleGray];
     
-    CGSize size = [cell.myLabel.text sizeWithFont:cell.myLabel.font constrainedToSize:CGSizeMake(250, cell.myLabel.frame.size.height) lineBreakMode:NSLineBreakByTruncatingTail];
-    cell.myLabelWidth.constant = size.width;
+    [cell.titleLabel setText:[string substringWithRange:NSMakeRange(0, indexPath.row)]];
+    [cell.number setText:[NSString stringWithFormat:@"(%ld)", (long)indexPath.row]];
     
+    if (indexPath.row % 7 == 0) {
+        [cell.number setText:@""];
+    }
     
     return cell;
 }
