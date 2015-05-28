@@ -11,5 +11,6 @@
 @interface MyTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
 @property (weak, nonatomic) IBOutlet UILabel *number;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *myLabelWidth;
 
 @end
